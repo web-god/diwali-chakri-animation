@@ -1,0 +1,556 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url("floor.jpg");
+  background-size: cover;
+}
+
+.chakra-back,
+.chakra-front {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.chakra-front {
+  background: #ffdd1b;
+  box-sizing: border-box;
+  box-shadow: 0 0px #fff, 0 0 10px #fff, 0 0 20px #ffdd1b, 0 0 30px #ffdd1b,
+    0 0 40px #ffdd1b, 0 0 55px #ffdd1b, 0 0 75px #ffdd1b;
+  animation: rotate 1s linear infinite;
+}
+.chakra-front .line {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 5px);
+  height: 100%;
+  width: 10px;
+  box-sizing: border-box;
+  border-right: 1px solid rgb(219, 33, 33);
+  border-left: 1px solid black;
+}
+.chakra-front .line:nth-child(1) {
+  transform: rotate(30deg);
+}
+.chakra-front .line:nth-child(2) {
+  transform: rotate(60deg);
+}
+.chakra-front .line:nth-child(3) {
+  transform: rotate(90deg);
+}
+.chakra-front .line:nth-child(4) {
+  transform: rotate(120deg);
+}
+.chakra-front .line:nth-child(5) {
+  transform: rotate(150deg);
+}
+.chakra-front .line:nth-child(6) {
+  transform: rotate(180deg);
+}
+
+.trail {
+  position: absolute;
+  bottom: 50%;
+  left: calc(50% - 1px);
+  width: 2px;
+  height: 20px;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+  background: white;
+  box-shadow: 0 0px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px yellow,
+    0 0 40px yellow, 0 0 55px yellow, 0 0 75px yellow;
+  transform-origin: center bottom;
+  z-index: -1;
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.trail:nth-child(1) {
+  animation: rocket-1 1s ease-in infinite;
+  animation-delay: 0.12s;
+}
+
+@keyframes rocket-1 {
+  from {
+    transform: rotate(10deg) translateY(0px);
+  }
+  to {
+    transform: rotate(10deg) translateY(-100px);
+  }
+}
+.trail:nth-child(2) {
+  animation: rocket-2 1s ease-in infinite;
+  animation-delay: 0.24s;
+}
+
+@keyframes rocket-2 {
+  from {
+    transform: rotate(20deg) translateY(0px);
+  }
+  to {
+    transform: rotate(20deg) translateY(-100px);
+  }
+}
+.trail:nth-child(3) {
+  animation: rocket-3 1s ease-in infinite;
+  animation-delay: 0.36s;
+}
+
+@keyframes rocket-3 {
+  from {
+    transform: rotate(30deg) translateY(0px);
+  }
+  to {
+    transform: rotate(30deg) translateY(-100px);
+  }
+}
+.trail:nth-child(4) {
+  animation: rocket-4 1s ease-in infinite;
+  animation-delay: 0.48s;
+}
+
+@keyframes rocket-4 {
+  from {
+    transform: rotate(40deg) translateY(0px);
+  }
+  to {
+    transform: rotate(40deg) translateY(-100px);
+  }
+}
+.trail:nth-child(5) {
+  animation: rocket-5 1s ease-in infinite;
+  animation-delay: 0.6s;
+}
+
+@keyframes rocket-5 {
+  from {
+    transform: rotate(50deg) translateY(0px);
+  }
+  to {
+    transform: rotate(50deg) translateY(-100px);
+  }
+}
+.trail:nth-child(6) {
+  animation: rocket-6 1s ease-in infinite;
+  animation-delay: 0.72s;
+}
+
+@keyframes rocket-6 {
+  from {
+    transform: rotate(60deg) translateY(0px);
+  }
+  to {
+    transform: rotate(60deg) translateY(-100px);
+  }
+}
+.trail:nth-child(7) {
+  animation: rocket-7 1s ease-in infinite;
+  animation-delay: 0.84s;
+}
+
+@keyframes rocket-7 {
+  from {
+    transform: rotate(70deg) translateY(0px);
+  }
+  to {
+    transform: rotate(70deg) translateY(-100px);
+  }
+}
+.trail:nth-child(8) {
+  animation: rocket-8 1s ease-in infinite;
+  animation-delay: 0.96s;
+}
+
+@keyframes rocket-8 {
+  from {
+    transform: rotate(80deg) translateY(0px);
+  }
+  to {
+    transform: rotate(80deg) translateY(-100px);
+  }
+}
+.trail:nth-child(9) {
+  animation: rocket-9 1s ease-in infinite;
+  animation-delay: 1.08s;
+}
+
+@keyframes rocket-9 {
+  from {
+    transform: rotate(90deg) translateY(0px);
+  }
+  to {
+    transform: rotate(90deg) translateY(-100px);
+  }
+}
+.trail:nth-child(10) {
+  animation: rocket-10 1s ease-in infinite;
+  animation-delay: 1.2s;
+}
+
+@keyframes rocket-10 {
+  from {
+    transform: rotate(100deg) translateY(0px);
+  }
+  to {
+    transform: rotate(100deg) translateY(-100px);
+  }
+}
+.trail:nth-child(11) {
+  animation: rocket-11 1s ease-in infinite;
+  animation-delay: 1.32s;
+}
+
+@keyframes rocket-11 {
+  from {
+    transform: rotate(110deg) translateY(0px);
+  }
+  to {
+    transform: rotate(110deg) translateY(-100px);
+  }
+}
+.trail:nth-child(12) {
+  animation: rocket-12 1s ease-in infinite;
+  animation-delay: 1.44s;
+}
+
+@keyframes rocket-12 {
+  from {
+    transform: rotate(120deg) translateY(0px);
+  }
+  to {
+    transform: rotate(120deg) translateY(-100px);
+  }
+}
+.trail:nth-child(13) {
+  animation: rocket-13 1s ease-in infinite;
+  animation-delay: 1.56s;
+}
+
+@keyframes rocket-13 {
+  from {
+    transform: rotate(130deg) translateY(0px);
+  }
+  to {
+    transform: rotate(130deg) translateY(-100px);
+  }
+}
+.trail:nth-child(14) {
+  animation: rocket-14 1s ease-in infinite;
+  animation-delay: 1.68s;
+}
+
+@keyframes rocket-14 {
+  from {
+    transform: rotate(140deg) translateY(0px);
+  }
+  to {
+    transform: rotate(140deg) translateY(-100px);
+  }
+}
+.trail:nth-child(15) {
+  animation: rocket-15 1s ease-in infinite;
+  animation-delay: 1.8s;
+}
+
+@keyframes rocket-15 {
+  from {
+    transform: rotate(150deg) translateY(0px);
+  }
+  to {
+    transform: rotate(150deg) translateY(-100px);
+  }
+}
+.trail:nth-child(16) {
+  animation: rocket-16 1s ease-in infinite;
+  animation-delay: 1.92s;
+}
+
+@keyframes rocket-16 {
+  from {
+    transform: rotate(160deg) translateY(0px);
+  }
+  to {
+    transform: rotate(160deg) translateY(-100px);
+  }
+}
+.trail:nth-child(17) {
+  animation: rocket-17 1s ease-in infinite;
+  animation-delay: 2.04s;
+}
+
+@keyframes rocket-17 {
+  from {
+    transform: rotate(170deg) translateY(0px);
+  }
+  to {
+    transform: rotate(170deg) translateY(-100px);
+  }
+}
+.trail:nth-child(18) {
+  animation: rocket-18 1s ease-in infinite;
+  animation-delay: 2.16s;
+}
+
+@keyframes rocket-18 {
+  from {
+    transform: rotate(180deg) translateY(0px);
+  }
+  to {
+    transform: rotate(180deg) translateY(-100px);
+  }
+}
+.trail:nth-child(19) {
+  animation: rocket-19 1s ease-in infinite;
+  animation-delay: 2.28s;
+}
+
+@keyframes rocket-19 {
+  from {
+    transform: rotate(190deg) translateY(0px);
+  }
+  to {
+    transform: rotate(190deg) translateY(-100px);
+  }
+}
+.trail:nth-child(20) {
+  animation: rocket-20 1s ease-in infinite;
+  animation-delay: 2.4s;
+}
+
+@keyframes rocket-20 {
+  from {
+    transform: rotate(200deg) translateY(0px);
+  }
+  to {
+    transform: rotate(200deg) translateY(-100px);
+  }
+}
+.trail:nth-child(21) {
+  animation: rocket-21 1s ease-in infinite;
+  animation-delay: 2.52s;
+}
+
+@keyframes rocket-21 {
+  from {
+    transform: rotate(210deg) translateY(0px);
+  }
+  to {
+    transform: rotate(210deg) translateY(-100px);
+  }
+}
+.trail:nth-child(22) {
+  animation: rocket-22 1s ease-in infinite;
+  animation-delay: 2.64s;
+}
+
+@keyframes rocket-22 {
+  from {
+    transform: rotate(220deg) translateY(0px);
+  }
+  to {
+    transform: rotate(220deg) translateY(-100px);
+  }
+}
+.trail:nth-child(23) {
+  animation: rocket-23 1s ease-in infinite;
+  animation-delay: 2.76s;
+}
+
+@keyframes rocket-23 {
+  from {
+    transform: rotate(230deg) translateY(0px);
+  }
+  to {
+    transform: rotate(230deg) translateY(-100px);
+  }
+}
+.trail:nth-child(24) {
+  animation: rocket-24 1s ease-in infinite;
+  animation-delay: 2.88s;
+}
+
+@keyframes rocket-24 {
+  from {
+    transform: rotate(240deg) translateY(0px);
+  }
+  to {
+    transform: rotate(240deg) translateY(-100px);
+  }
+}
+.trail:nth-child(25) {
+  animation: rocket-25 1s ease-in infinite;
+  animation-delay: 3s;
+}
+
+@keyframes rocket-25 {
+  from {
+    transform: rotate(250deg) translateY(0px);
+  }
+  to {
+    transform: rotate(250deg) translateY(-100px);
+  }
+}
+.trail:nth-child(26) {
+  animation: rocket-26 1s ease-in infinite;
+  animation-delay: 3.12s;
+}
+
+@keyframes rocket-26 {
+  from {
+    transform: rotate(260deg) translateY(0px);
+  }
+  to {
+    transform: rotate(260deg) translateY(-100px);
+  }
+}
+.trail:nth-child(27) {
+  animation: rocket-27 1s ease-in infinite;
+  animation-delay: 3.24s;
+}
+
+@keyframes rocket-27 {
+  from {
+    transform: rotate(270deg) translateY(0px);
+  }
+  to {
+    transform: rotate(270deg) translateY(-100px);
+  }
+}
+.trail:nth-child(28) {
+  animation: rocket-28 1s ease-in infinite;
+  animation-delay: 3.36s;
+}
+
+@keyframes rocket-28 {
+  from {
+    transform: rotate(280deg) translateY(0px);
+  }
+  to {
+    transform: rotate(280deg) translateY(-100px);
+  }
+}
+.trail:nth-child(29) {
+  animation: rocket-29 1s ease-in infinite;
+  animation-delay: 3.48s;
+}
+
+@keyframes rocket-29 {
+  from {
+    transform: rotate(290deg) translateY(0px);
+  }
+  to {
+    transform: rotate(290deg) translateY(-100px);
+  }
+}
+.trail:nth-child(30) {
+  animation: rocket-30 1s ease-in infinite;
+  animation-delay: 3.6s;
+}
+
+@keyframes rocket-30 {
+  from {
+    transform: rotate(300deg) translateY(0px);
+  }
+  to {
+    transform: rotate(300deg) translateY(-100px);
+  }
+}
+.trail:nth-child(31) {
+  animation: rocket-31 1s ease-in infinite;
+  animation-delay: 3.72s;
+}
+
+@keyframes rocket-31 {
+  from {
+    transform: rotate(310deg) translateY(0px);
+  }
+  to {
+    transform: rotate(310deg) translateY(-100px);
+  }
+}
+.trail:nth-child(32) {
+  animation: rocket-32 1s ease-in infinite;
+  animation-delay: 3.84s;
+}
+
+@keyframes rocket-32 {
+  from {
+    transform: rotate(320deg) translateY(0px);
+  }
+  to {
+    transform: rotate(320deg) translateY(-100px);
+  }
+}
+.trail:nth-child(33) {
+  animation: rocket-33 1s ease-in infinite;
+  animation-delay: 3.96s;
+}
+
+@keyframes rocket-33 {
+  from {
+    transform: rotate(330deg) translateY(0px);
+  }
+  to {
+    transform: rotate(330deg) translateY(-100px);
+  }
+}
+.trail:nth-child(34) {
+  animation: rocket-34 1s ease-in infinite;
+  animation-delay: 4.08s;
+}
+
+@keyframes rocket-34 {
+  from {
+    transform: rotate(340deg) translateY(0px);
+  }
+  to {
+    transform: rotate(340deg) translateY(-100px);
+  }
+}
+.trail:nth-child(35) {
+  animation: rocket-35 1s ease-in infinite;
+  animation-delay: 4.2s;
+}
+
+@keyframes rocket-35 {
+  from {
+    transform: rotate(350deg) translateY(0px);
+  }
+  to {
+    transform: rotate(350deg) translateY(-100px);
+  }
+}
+.trail:nth-child(36) {
+  animation: rocket-36 1s ease-in infinite;
+  animation-delay: 4.32s;
+}
+
+@keyframes rocket-36 {
+  from {
+    transform: rotate(360deg) translateY(0px);
+  }
+  to {
+    transform: rotate(360deg) translateY(-100px);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
